@@ -38,6 +38,10 @@
 
 .endif
 
+// custom ASM files - ALL CREDIT TO DRAYANO
+.include "armips/asm/custom/mart_items.s" // custom mart inventories
+.include "armips/asm/custom/ev_cap.s" // fix EV caps to 252
+
 // code addon list
 //.include "armips/data/hiddenabilities.s" // the hidden ability list, 7
 //.include "armips/data/baseexp.s" // the base experience list, 8

@@ -250,9 +250,13 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
 
     movesplit = GetMoveSplit(sp, moveno);
 
-    // handle huge power + pure power
-    if ((AttackingMon.ability == ABILITY_HUGE_POWER) || (AttackingMon.ability == ABILITY_PURE_POWER))
+    // handle huge power + vanilla pure power
+    if ((AttackingMon.ability == ABILITY_HUGE_POWER) || ((AttackingMon.ability == ABILITY_PURE_POWER) && (SPA_PURE_POWER == 0)))
         attack = attack * 2;
+	
+	// handle new pure power
+    if ((AttackingMon.ability == ABILITY_PURE_POWER) && (SPA_PURE_POWER == 1))
+        sp_attack = sp_attack * 2;
 
     // handle slow start
     if ((AttackingMon.ability == ABILITY_SLOW_START)
@@ -842,6 +846,16 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
         {
             defense = defense * 15 / 10;
         }
+		
+		#ifdef IMPLEMENT_BUFF_HAIL //add snow def boost to Hail
+		
+		if ((field_cond & WEATHER_HAIL_ANY) &&
+            ((DefendingMon.type1 == TYPE_ICE) || (DefendingMon.type2 == TYPE_ICE)))
+        {
+            defense = defense * 15 / 10;
+        }
+		
+		#endif
         if ((field_cond & WEATHER_SUNNY_ANY) &&
             (CheckSideAbility(bw, sp, CHECK_ABILITY_SAME_SIDE_HP, attacker, ABILITY_FLOWER_GIFT)))
         {
@@ -980,6 +994,20 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
                 break;
             }
         }
+		
+		#ifdef IMPLEMENT_BUFF_HAIL
+		
+		if (field_cond & WEATHER_HAIL_ANY) // Hail boosts ice
+        {
+            switch (movetype)
+            {
+            case TYPE_ICE:
+                damage = damage * 15 / 10;
+                break;
+            }
+        }
+		
+		#endif
 
         if (AttackingMon.ability == ABILITY_SAND_FORCE // sand force boosts damage in sand for certain move types
          && field_cond & WEATHER_SANDSTORM_ANY

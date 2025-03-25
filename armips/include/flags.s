@@ -794,7 +794,7 @@ FLAG_HIDE_MT_SILVER_CAVE_MOLTRES                          equ 775
 FLAG_HIDE_STEVEN_IN_HOUSE_BEFORE_LATIS                    equ 776
 FLAG_HIDE_ROUTE_25_MISTYS_BOYFRIEND                       equ 777
 FLAG_HIDE_UNION_CAVE_LAPRAS                               equ 778
-FLAG_UNK_30B                                              equ 779
+FLAG_BILL_EEVEE_GIFT									  equ 779
 FLAG_HIDE_PEWTER_CITY_STEVEN                              equ 780
 FLAG_HIDE_PEWTER_CITY_LATIOS                              equ 781
 FLAG_HIDE_BURNED_TOWER_STATIC_SUICUNE                     equ 782

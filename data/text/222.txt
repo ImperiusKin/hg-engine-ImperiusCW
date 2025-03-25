@@ -258,7 +258,7 @@ Lucky Punch
 Metal Powder
 Thick Club
 Leek
-Red Scarf
+RedScarf
 Blue Scarf
 Pink Scarf
 Green Scarf
@@ -792,9 +792,10 @@ Naive Mint
 Serious Mint
 Fairy Feather
 Syrupy Apple
-Mediocre Teacup
-Masterful Teacup
+Unremarkable Teacup
+Masterpiece Teacup
 Cornerstone Mask
 Wellspring Mask
 Hearthflame Mask
 Metal Alloy
+Eeveerstone

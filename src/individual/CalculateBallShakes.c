@@ -108,12 +108,12 @@ u32 CalculateBallShakes(void *bw, struct BattleStruct *sp) {
         if (ballRate > 40)
             ballRate = 40;
         break;
-    //case ITEM_LUXURY_BALL:
-    //
-    //    break;
-    //case ITEM_PREMIER_BALL:
-    //
-    //    break;
+    case ITEM_LUXURY_BALL:
+        ballRate = 30;
+        break;
+    case ITEM_PREMIER_BALL:
+        ballRate = 25;
+        break;
     case ITEM_DUSK_BALL:
         if (Battle_GetTimeOfDay(bw) == 3 || Battle_GetTimeOfDay(bw) == 4 || BattleWorkGroundIDGet(bw) == 5)
             ballRate = 30;
@@ -125,9 +125,9 @@ u32 CalculateBallShakes(void *bw, struct BattleStruct *sp) {
         if (sp->total_turn < 1)
             ballRate = 50;
         break;
-    //case ITEM_CHERISH_BALL:
-    //
-    //    break;
+    case ITEM_CHERISH_BALL:
+        ballRate = 15;
+        break;
     case ITEM_FAST_BALL:
         if (PokePersonalParaGet(sp->battlemon[sp->defence_client].species, PERSONAL_BASE_SPEED) > 100)
             ballRate = 40;

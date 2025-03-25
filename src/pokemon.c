@@ -1403,11 +1403,37 @@ BOOL LONG_CALL GiveMon(int heapId, void *saveData, int species, int level, int f
     sp1C = heldItem;
     SetMonData(pokemon, MON_DATA_HELD_ITEM, &sp1C);
     SetMonData(pokemon, MON_DATA_FORM, &forme);
+	
+	#define FLAG_BILL_EEVEE_GIFT 779
 
     if (forme != 0) // reinitialize moves for different learnsets
     {
         InitBoxMonMoveset(&pokemon->box);
     }
+	
+	u16 IV_31;
+	IV_31 = 31;
+	
+	if (CheckScriptFlag(FLAG_BILL_EEVEE_GIFT) == 1)
+	{
+	SetMonData(pokemon, MON_DATA_HP_IV, &IV_31);
+	SetMonData(pokemon, MON_DATA_ATK_IV, &IV_31);
+	SetMonData(pokemon, MON_DATA_DEF_IV, &IV_31);
+	SetMonData(pokemon, MON_DATA_SPATK_IV, &IV_31);
+	SetMonData(pokemon, MON_DATA_SPDEF_IV, &IV_31);
+	SetMonData(pokemon, MON_DATA_SPEED_IV, &IV_31);
+	}
+	
+	#ifdef ALL_PERFECT_IVS
+	
+	SetMonData(pokemon, MON_DATA_HP_IV, &IV_31);
+	SetMonData(pokemon, MON_DATA_ATK_IV, &IV_31);
+	SetMonData(pokemon, MON_DATA_DEF_IV, &IV_31);
+	SetMonData(pokemon, MON_DATA_SPATK_IV, &IV_31);
+	SetMonData(pokemon, MON_DATA_SPDEF_IV, &IV_31);
+	SetMonData(pokemon, MON_DATA_SPEED_IV, &IV_31);
+	
+	#endif
 
     RecalcPartyPokemonStats(pokemon); // recalculate stats
 
@@ -1522,6 +1548,20 @@ void LONG_CALL CreateBoxMonData(struct BoxPokemon *boxmon, int species, int leve
         j=(i&(0x001f<<10))>>10;
         SetBoxMonData(boxmon,MON_DATA_SPDEF_IV,(u8 *)&j);
     }
+	
+	#ifdef ALL_PERFECT_IVS
+	
+	u16 IV_31;
+	IV_31 = 31;
+	
+	SetBoxMonData(boxmon, MON_DATA_HP_IV, &IV_31);
+	SetBoxMonData(boxmon, MON_DATA_ATK_IV, &IV_31);
+	SetBoxMonData(boxmon, MON_DATA_DEF_IV, &IV_31);
+	SetBoxMonData(boxmon, MON_DATA_SPATK_IV, &IV_31);
+	SetBoxMonData(boxmon, MON_DATA_SPDEF_IV, &IV_31);
+	SetBoxMonData(boxmon, MON_DATA_SPEED_IV, &IV_31);
+	
+	#endif
 
     i = PokePersonalParaGet(species,PERSONAL_ABILITY_1);
     j = PokePersonalParaGet(species,PERSONAL_ABILITY_2);
@@ -1599,6 +1639,20 @@ u32 gLastPokemonLevelForMoneyCalc;
  */
 void set_starter_hidden_ability(struct Party *party UNUSED, struct PartyPokemon *pp)
 {
+	#ifdef PERFECT_STARTER_IVS
+	
+	u16 IV_31;
+	IV_31 = 31;
+	
+	SetMonData(pp, MON_DATA_HP_IV, &IV_31);
+	SetMonData(pp, MON_DATA_ATK_IV, &IV_31);
+	SetMonData(pp, MON_DATA_DEF_IV, &IV_31);
+	SetMonData(pp, MON_DATA_SPATK_IV, &IV_31);
+	SetMonData(pp, MON_DATA_SPDEF_IV, &IV_31);
+	SetMonData(pp, MON_DATA_SPEED_IV, &IV_31);
+	
+	#endif
+	
     if (CheckScriptFlag(HIDDEN_ABILITIES_STARTERS_FLAG) == 1)
     {
         SET_MON_HIDDEN_ABILITY_BIT(pp)

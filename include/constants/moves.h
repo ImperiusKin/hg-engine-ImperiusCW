@@ -945,8 +945,12 @@
 // define your new moves below like this
 // #define MOVE_CUSTOM_MOVE_1 924
 
+#define MOVE_WILDFIRE 924
+#define MOVE_GEO_SPIRE 925
+#define MOVE_DEATH_ROLL 926
+
 // update this number yourself manually
-#define NUM_OF_MOVES 923
+#define NUM_OF_MOVES 927
 
 #define MOVE_G_MAX_WILDFIRE (NUM_OF_MOVES-1+1)
 #define MOVE_G_MAX_BEFUDDLE (NUM_OF_MOVES-1+2)

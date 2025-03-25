@@ -1330,6 +1330,10 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
     int exp_client_no = 0;
 
     client_no = (expcalc->sp->fainting_client >> 1) & 1;
+	
+	#ifdef IMPLEMENT_MIN_GRIND
+	u32 ExpMult = GetScriptVar(MIN_GRIND_VARIABLE);
+	#endif
 
     if (expcalc->seq_no < 37)
     {
@@ -1391,6 +1395,10 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
 
             u32 base = GetSpeciesBaseExp(expcalc->sp->battlemon[expcalc->sp->fainting_client].species, expcalc->sp->battlemon[expcalc->sp->fainting_client].form_no); // base experience
             totalexp = (base * level) / 5;
+			
+			if (ExpMult > 1) {
+				totalexp = (totalexp * ExpMult);
+			}
 
             u32 top = (2*level + 10) * (2*level + 10) * sqrt(2*level + 10);
             u32 bottom = (level + Lp + 10) * (level + Lp + 10) * sqrt(level + Lp + 10);
@@ -1496,6 +1504,11 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
         // multiply by 255/390 (map audino to 255) to not get massively inflated experience rates
         totalexp = 255 * GetSpeciesBaseExp(sp->battlemon[sp->fainting_client].species, sp->battlemon[sp->fainting_client].form_no) / 390;//PokePersonalParaGet(sp->battlemon[sp->fainting_client].species, PERSONAL_EXP_YIELD);
         totalexp = (totalexp * sp->battlemon[sp->fainting_client].level) / 7;
+			
+		if (ExpMult > 1) {
+			totalexp = (totalexp * ExpMult);
+		}
+			
         if (monCountFromItem)
         {
             sp->obtained_exp = (totalexp / 2) / monCount;
@@ -3133,7 +3146,7 @@ BOOL BtlCmd_CalcWeatherBallParams(void *bw, struct BattleStruct *sp) {
             if (sp->field_condition & WEATHER_SUNNY_ANY) {
                 sp->move_type = TYPE_FIRE;
             }
-            if (sp->field_condition & WEATHER_HAIL_ANY) {
+            if (sp->field_condition & (WEATHER_HAIL_ANY || WEATHER_SNOW_ANY)) {
                 sp->move_type = TYPE_ICE;
             }
             // In Pokémon XD: Gale of Darkness, when used during a shadowy aura, Weather Ball's power doubles to 100, and the move becomes a typeless physical move

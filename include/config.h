@@ -22,7 +22,7 @@
 
 // EXPERIENCE_FORMULA_GEN defines the experience formula you would like to use.  Gens 5, 7, and 8 consider the difference between the attacker's level and the fainted's level to scale the experience gained.
 // i.e. defining this as "5", "7", or "8" would use a scaled formula, whereas "6" and others would use the default formula.  There is a multiplier of 255 / 390 to not artificially inflate the experience given as well with higher base experience.
-#define EXPERIENCE_FORMULA_GEN 8
+#define EXPERIENCE_FORMULA_GEN 6
 
 // HIDDEN_ABILITIES defines whether or not Pokémon with their hidden ability bit set will receive their hidden abilities when being generated/changing form in battle.
 // commenting this line out essentially disables hidden abilities to maintain default behavior, while leaving this as-is will introduce hidden abilities and all of their handling.
@@ -73,7 +73,7 @@
 // if the level is greater than or equal to LEVEL_CAP_VARIABLE, the pokémon will no longer gain experience
 // uncommenting IMPLEMENT_LEVEL_CAP enables the level cap system.  undefining LEVEL_CAP_VARIABLE will just cause compilation errors
 // uncommenting UNCAP_CANDIES_FROM_LEVEL_CAP will allow for rare candies to not be capped by the level cap even with the level cap in place, like run & bun
-//#define IMPLEMENT_LEVEL_CAP
+#define IMPLEMENT_LEVEL_CAP
 #define LEVEL_CAP_VARIABLE 0x416F
 //#define UNCAP_CANDIES_FROM_LEVEL_CAP
 
@@ -104,7 +104,7 @@
 // SHINY_ODDS are the odds that a pokémon will be shiny.  actual odds are SHINY_ODDS over 65,536, by default 8 / 65536 or 1 / 8192
 // note that changing this still has no chance of spawning shiny mons in for trainers like the tutorial's method does
 // this will change existing mons too!  if you want to change the odds of wild mons only, you will have to add a certain amount of pid rerolls to the AddWildPartyPokemon routine
-#define SHINY_ODDS 8
+#define SHINY_ODDS 4096
 
 // LEARNSET_TOTAL_MOVES is the amount of moves that each pokémon should be able to learn by level up
 #define LEARNSET_TOTAL_MOVES 41 // 40+terminate - currently driven by gallade
@@ -121,7 +121,7 @@
 #define AI_CAN_GRAB_ITEMS
 
 // PROTEAN_GENERATION defines the behavior that Protean should exhibit, where it either changes type every move (<=8) or changes type once per appearance in battle (>=9)
-#define PROTEAN_GENERATION GEN_LATEST
+#define PROTEAN_GENERATION 8
 
 // CORROSIVE_GAS_IMPLIED_BEHAVIOUR defines the behavior that Corrosive Gas should exhibit, where it either does it does not affect a Kyogre, a Groudon, or species holding their respective Mega Stones to not lose their Blue Orb, Red Orb, and Mega Stones respectively (TRUE), or affects species in the above cases (FALSE).
 #define CORROSIVE_GAS_IMPLIED_BEHAVIOUR TRUE
@@ -131,7 +131,7 @@
 // SNOW_WARNING_GENERATION controls whether to summon Snow or Hail when the ability is activated.
 // 9 or above: Snow
 // Otherwise: Hail
-#define SNOW_WARNING_GENERATION GEN_LATEST
+#define SNOW_WARNING_GENERATION 8
 
 // IMPLEMENT_REUSABLE_REPELS defines whether or not a prompt to use another repel automatically appears upon the previous repel being used up
 #define IMPLEMENT_REUSABLE_REPELS
@@ -147,5 +147,47 @@
 
 // STATIC_HP_BAR updates the HP bar to increase/decrease at a fixed rate like later generations
 #define STATIC_HP_BAR
+
+// GALE_WINGS_GENERATION defines the behavior that Gale Wings should exhibit, where it either always adds priority (<=6) or changes type once per appearance in battle (>=7)
+#define GALE_WINGS_GENERATION 6
+
+// SPA_PURE_POWER defines if Pure Power is changed to double Special Attack instead of Attack
+// set value to 0 for vanilla behavior or 1 for new behavior
+#define SPA_PURE_POWER 1
+
+// IMPLEMENT_SCALING defines whether or not dynamic level scaling of wild pokemon and enemy trainers is implemented, and provides a variable to allow for user selection of different implementations (WIP)
+// Need to add script to ask/set variable
+// 0 = Do Not Scale; 1 = Scale Up Wild and Trainer pokemon to AVERAGE level of player party; 2 = Scale Up Wild and Trainer pokemon to HIGHEST level in player party; 3 = Scale Up Wild and Trainer pokemon to LOWEST level in player party
+// Trainers will only scale up, if levels in trainers.s are higher they will remain the same.
+// uncommenting IMPLEMENT_SCALING enables dynamic scaling.  Undefining SCALING_TYPE_VARIABLE will just cause compilation errors
+#define IMPLEMENT_SCALING
+#define SCALING_TYPE_VARIABLE 0x406A
+
+// IMPLEMENT_MIN_GRIND defines whether or not to add settings to reduce grind
+// This will add a combined variable to enable an EXP All functionality as well as multiply the amount of experience gained
+// Setting variable to 0 will retain vanilla behavior
+// Setting variable to 1 will enable EXP All but not increase EXP gain - NOT WORKING PROPERLY, CURRENTLY ADDS HELPER NPCs
+// Setting variable to >1 will multiply EXP gained by that amount
+// comment out IMPLEMENT_MIN_GRIND to remove functionality completely
+#define IMPLEMENT_MIN_GRIND
+#define MIN_GRIND_VARIABLE 0x406B
+
+// ALL_PERFECT_IVS defines whether or not all wild and gift pokemon have perfect IVS
+// This will set all wild and gift pokemon IVs to 31
+// comment out PERFECT_WILD_IVS to return to random IVs
+#define ALL_PERFECT_IVS
+
+// PERFECT_STARTER_IVS defines whether or not starter pokemon have perfect IVS
+// This will set all starter pokemon IVs to 31
+// comment out PERFECT_WILD_IVS to return to random IVs
+#define PERFECT_STARTER_IVS
+
+// IMPLEMENT_BUFF_HAIL defines whether or not to add additional Hail buffs
+// Adds both 1.5x Defense boost from Snow as well as 1.5x Ice-type damage boost
+// requires SNOW_WARNING_GENERATION in armips/include/config.s to be >= 8
+// comment out the line for vanilla Hail behavior
+//#define IMPLEMENT_BUFF_HAIL
+
+//#define RANDOM_BATTLE_TOWER
 
 #endif

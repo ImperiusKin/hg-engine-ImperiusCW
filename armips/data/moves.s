@@ -14778,6 +14778,54 @@ movedata MOVE_MALIGNANT_CHAIN, "Malignant Chain"
     contesttype CONTEST_COOL
     terminatedata
     movedescription MOVE_MALIGNANT_CHAIN, "---"
+	
+movedata MOVE_WILDFIRE, "Wildfire"
+    battleeffect MOVE_EFFECT_RAISE_SP_ATK_HIT
+    pss SPLIT_SPECIAL
+    basepower 80
+    type TYPE_FIRE
+    accuracy 100
+    pp 5
+    effectchance 100
+    target RANGE_SINGLE_TARGET
+    priority 0
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    appeal 0x00
+    contesttype CONTEST_COOL
+    terminatedata
+    movedescription MOVE_WILDFIRE, "The user whips up an\nuncontrollable blaze,\ndamaging and raising speed."
+	
+movedata MOVE_GEO_SPIRE, "Geo Spire"
+    battleeffect MOVE_EFFECT_REMOVE_PROTECT
+    pss SPLIT_SPECIAL
+    basepower 60
+    type TYPE_GROUND
+    accuracy 100
+    pp 10
+    effectchance 0
+    target RANGE_SINGLE_TARGET
+    priority 2
+    flags FLAG_MIRROR_MOVE
+    appeal 0x10
+    contesttype CONTEST_BEAUTY
+    terminatedata
+    movedescription MOVE_GEO_SPIRE, "The user summons\na spike of earth\n behind the target,\nbreaking protect"
+	
+movedata MOVE_DEATH_ROLL, "Death Roll"
+    battleeffect MOVE_EFFECT_CONTINUE_AND_CONFUSE_SELF
+    pss SPLIT_PHYSICAL
+    basepower 90
+    type TYPE_WATER
+    accuracy 100
+    pp 10
+    effectchance 0
+    target RANGE_SINGLE_TARGET
+    priority 0
+    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_CONTACT
+    appeal 0x07
+    contesttype CONTEST_COOL
+    terminatedata
+    movedescription MOVE_DEATH_ROLL, "The user clamps its\njaw onto the target\nand spins rapidly for\ntwo to three turns.\nHowever, it then\nbecomes confused."
 
 movedatanoname NUM_OF_MOVES
     battleeffect MOVE_EFFECT_HIT

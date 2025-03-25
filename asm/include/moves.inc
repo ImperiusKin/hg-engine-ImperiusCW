@@ -946,8 +946,12 @@
 // define your new moves below like this
 // .equ MOVE_CUSTOM_MOVE_1, 924
 
+.equ MOVE_WILDFIRE, 924
+.equ MOVE_GEO_SPIRE, 925
+.equ MOVE_DEATH_ROLL, 926
+
 // update this number yourself manually
-.equ NUM_OF_MOVES, 923
+.equ NUM_OF_MOVES, 927
 
 .equ MOVE_G_MAX_WILDFIRE, (NUM_OF_MOVES-1+1)
 .equ MOVE_G_MAX_BEFUDDLE, (NUM_OF_MOVES-1+2)

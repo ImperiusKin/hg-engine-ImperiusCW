@@ -90,3 +90,4 @@ tools/swav2swar.exe
 *.gbapal
 *.4bpp
 changelog
+/armips/asm/custom/Obsolete

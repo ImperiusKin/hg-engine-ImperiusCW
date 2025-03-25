@@ -868,6 +868,8 @@
 #define ITEM_HEARTHFLAME_MASK   (ITEM_PIXIE_PLATE + 214)
 #define ITEM_METAL_ALLOY        (ITEM_PIXIE_PLATE + 215)
 
+#define ITEM_EEVEERSTONE        (ITEM_PIXIE_PLATE + 216)
+
 #define NUM_MEGA_STONES 48 // includes the pixie plate
 
 #define IS_ITEM_TERRAIN_SEED(item) (item >= ITEM_ELECTRIC_SEED && item <= ITEM_PSYCHIC_SEED)
@@ -877,7 +879,7 @@
 #define NUM_UNKNOWN_SLOTS 22 // used to adjust in data/itemdata.c
 #define NUM_UNKNOWN_SLOTS_EXPLORER_KIT (NUM_UNKNOWN_SLOTS+1) // used to adjust in data/itemdata.c
 
-#define NEW_ITEM_MAX ITEM_METAL_ALLOY
+#define NEW_ITEM_MAX ITEM_EEVEERSTONE
 
 #define BAG_SLOT_QUANTITY_MAX                    999
 
