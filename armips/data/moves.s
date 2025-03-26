@@ -14779,21 +14779,21 @@ movedata MOVE_MALIGNANT_CHAIN, "Malignant Chain"
     terminatedata
     movedescription MOVE_MALIGNANT_CHAIN, "---"
 	
-movedata MOVE_WILDFIRE, "Wildfire"
-    battleeffect MOVE_EFFECT_WILDFIRE
+movedata MOVE_BLOWBACK, "Blowback"
+    battleeffect MOVE_EFFECT_RECOVER_HALF_DAMAGE_DEALT_BURN_HIT
     pss SPLIT_SPECIAL
     basepower 80
     type TYPE_FIRE
     accuracy 100
-    pp 5
-    effectchance 100
-    target RANGE_SINGLE_TARGET
+    pp 15
+    effectchance 50
+    target RANGE_ADJACENT_OPPONENTS
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_WILDFIRE, "The user whips up an\nuncontrollable blaze,\ndamaging and raising speed."
+    movedescription MOVE_BLOWBACK, "The user whips up an\nuncontrollable blaze, damaging\nand potentially burning the\ntarget. Heals the user."
 	
 movedata MOVE_GEO_SPIRE, "Geo Spire"
     battleeffect MOVE_EFFECT_REMOVE_PROTECT

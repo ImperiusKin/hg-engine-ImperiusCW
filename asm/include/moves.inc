@@ -946,7 +946,7 @@
 // define your new moves below like this
 // .equ MOVE_CUSTOM_MOVE_1, 924
 
-.equ MOVE_WILDFIRE, 924
+.equ MOVE_BLOWBACK, 924
 .equ MOVE_GEO_SPIRE, 925
 .equ MOVE_DEATH_ROLL, 926
 

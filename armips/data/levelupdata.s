@@ -3636,7 +3636,7 @@ levelup SPECIES_MEGANIUM
     learnset MOVE_FLAME_BURST, 32
 	learnset MOVE_SWIFT, 35
 	learnset MOVE_SUNNY_DAY, 39
-    learnset MOVE_WILDFIRE, 42
+    learnset MOVE_BLOWBACK, 42
     learnset MOVE_EARTH_POWER, 45
 	learnset MOVE_ENERGY_BALL, 48
 	learnset MOVE_ERUPTION, 52

@@ -945,7 +945,7 @@
 // define your new moves below like this
 // #define MOVE_CUSTOM_MOVE_1 924
 
-#define MOVE_WILDFIRE 924
+#define MOVE_BLOWBACK 924
 #define MOVE_GEO_SPIRE 925
 #define MOVE_DEATH_ROLL 926
 
