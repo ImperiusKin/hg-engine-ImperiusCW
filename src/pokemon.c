@@ -1428,6 +1428,7 @@ BOOL LONG_CALL GiveMon(int heapId, void *saveData, int species, int level, int f
 		SetMonData(pokemon, MON_DATA_SPEED_EV, &EV_252);
 		SetMonData(pokemon, MON_DATA_SPATK_EV, &EV_252);
 		SetMonData(pokemon, MON_DATA_HP_EV, &EV_6);
+		SetMonData(pokemon, MON_DATA_POKEBALL, ITEM_LUXURY_BALL);
 	}
 	
 	#ifdef ALL_PERFECT_IVS
