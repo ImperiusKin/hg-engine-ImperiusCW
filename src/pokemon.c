@@ -1412,16 +1412,22 @@ BOOL LONG_CALL GiveMon(int heapId, void *saveData, int species, int level, int f
     }
 	
 	u16 IV_31;
+	U16 EV_252;
+	U16 EV_6;
 	IV_31 = 31;
+	EV_252 = 252;
+	EV_6 = 6;
 	
-	if (CheckScriptFlag(FLAG_BILL_EEVEE_GIFT) == 1)
-	{
-	SetMonData(pokemon, MON_DATA_HP_IV, &IV_31);
-	SetMonData(pokemon, MON_DATA_ATK_IV, &IV_31);
-	SetMonData(pokemon, MON_DATA_DEF_IV, &IV_31);
-	SetMonData(pokemon, MON_DATA_SPATK_IV, &IV_31);
-	SetMonData(pokemon, MON_DATA_SPDEF_IV, &IV_31);
-	SetMonData(pokemon, MON_DATA_SPEED_IV, &IV_31);
+	if (CheckScriptFlag(BILL_EEVEE_FLAG) == 1) {
+		SetMonData(pokemon, MON_DATA_HP_IV, &IV_31);
+		SetMonData(pokemon, MON_DATA_ATK_IV, &IV_31);
+		SetMonData(pokemon, MON_DATA_DEF_IV, &IV_31);
+		SetMonData(pokemon, MON_DATA_SPATK_IV, &IV_31);
+		SetMonData(pokemon, MON_DATA_SPDEF_IV, &IV_31);
+		SetMonData(pokemon, MON_DATA_SPEED_IV, &IV_31);
+		SetMonData(pokemon, MON_DATA_SPEED_EV, &EV_252);
+		SetMonData(pokemon, MON_DATA_SPATK_EV, &EV_252);
+		SetMonData(pokemon, MON_DATA_HP_EV, &EV_6);
 	}
 	
 	#ifdef ALL_PERFECT_IVS
