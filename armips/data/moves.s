@@ -14782,14 +14782,14 @@ movedata MOVE_MALIGNANT_CHAIN, "Malignant Chain"
 movedata MOVE_WILDFIRE, "Wildfire"
     battleeffect MOVE_EFFECT_WILDFIRE
     pss SPLIT_SPECIAL
-    basepower 70
+    basepower 80
     type TYPE_FIRE
     accuracy 100
     pp 5
     effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14814,14 +14814,14 @@ movedata MOVE_GEO_SPIRE, "Geo Spire"
 movedata MOVE_DEATH_ROLL, "Death Roll"
     battleeffect MOVE_EFFECT_CONTINUE_AND_CONFUSE_SELF
     pss SPLIT_PHYSICAL
-    basepower 90
+    basepower 120
     type TYPE_WATER
     accuracy 100
     pp 10
     effectchance 0
     target RANGE_SINGLE_TARGET
     priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_CONTACT
+    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x07
     contesttype CONTEST_COOL
     terminatedata
