@@ -14780,9 +14780,9 @@ movedata MOVE_MALIGNANT_CHAIN, "Malignant Chain"
     movedescription MOVE_MALIGNANT_CHAIN, "---"
 	
 movedata MOVE_WILDFIRE, "Wildfire"
-    battleeffect MOVE_EFFECT_RAISE_SP_ATK_HIT
+    battleeffect MOVE_EFFECT_WILDFIRE
     pss SPLIT_SPECIAL
-    basepower 80
+    basepower 70
     type TYPE_FIRE
     accuracy 100
     pp 5
