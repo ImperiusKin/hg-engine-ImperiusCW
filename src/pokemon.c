@@ -1412,13 +1412,13 @@ BOOL LONG_CALL GiveMon(int heapId, void *saveData, int species, int level, int f
     }
 	
 	u16 IV_31;
-	U16 EV_252;
-	U16 EV_6;
+	u16 EV_252;
+	u16 EV_6;
 	IV_31 = 31;
 	EV_252 = 252;
 	EV_6 = 6;
 	
-	if (CheckScriptFlag(BILL_EEVEE_FLAG) == 1) {
+	if (CheckScriptFlag(FLAG_BILL_EEVEE_GIFT) == 1) {
 		SetMonData(pokemon, MON_DATA_HP_IV, &IV_31);
 		SetMonData(pokemon, MON_DATA_ATK_IV, &IV_31);
 		SetMonData(pokemon, MON_DATA_DEF_IV, &IV_31);
@@ -1428,12 +1428,11 @@ BOOL LONG_CALL GiveMon(int heapId, void *saveData, int species, int level, int f
 		SetMonData(pokemon, MON_DATA_SPEED_EV, &EV_252);
 		SetMonData(pokemon, MON_DATA_SPATK_EV, &EV_252);
 		SetMonData(pokemon, MON_DATA_HP_EV, &EV_6);
-		SetMonData(pokemon, MON_DATA_POKEBALL, ITEM_LUXURY_BALL);
 	}
 	
 	#ifdef ALL_PERFECT_IVS
 	
-	if (CheckScriptFlag(BILL_EEVEE_FLAG) != 1) {
+	if (CheckScriptFlag(FLAG_BILL_EEVEE_GIFT) != 1) {
 		SetMonData(pokemon, MON_DATA_HP_IV, &IV_31);
 		SetMonData(pokemon, MON_DATA_ATK_IV, &IV_31);
 		SetMonData(pokemon, MON_DATA_DEF_IV, &IV_31);
@@ -2055,13 +2054,14 @@ BOOL Pokemon_TryLevelUp(struct PartyPokemon *mon) {
     u32 exp = GetMonData(mon, MON_DATA_EXPERIENCE, NULL);
     u32 growthrate = (u32)PokePersonalParaGet(species, PERSONAL_EXP_GROUP);
     u32 maxexp = GetExpByGrowthRateAndLevel((int)growthrate, GetLevelCap());
+	u32 exp_level = GetExpByGrowthRateAndLevel((int)growthrate, level);
     if (exp > maxexp) {
         exp = maxexp;
         SetMonData(mon, MON_DATA_EXPERIENCE, &exp);
     }
     if (level > GetLevelCap())
         return FALSE;
-    if (exp >= GetExpByGrowthRateAndLevel((int)growthrate, level)) {
+    if (exp >= exp_level) {
         SetMonData(mon, MON_DATA_LEVEL, &level);
         return TRUE;
     }

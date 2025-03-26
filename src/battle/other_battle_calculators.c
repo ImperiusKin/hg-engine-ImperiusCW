@@ -1123,8 +1123,7 @@ void LONG_CALL CalcPriorityAndQuickClawCustapBerry(void *bsys, struct BattleStru
         }
 
         // Handle Gale Wings
-        if (
-            GetBattlerAbility(ctx, client) == ABILITY_GALE_WINGS && ctx->moveTbl[move].type == TYPE_FLYING && ((GALE_WINGS_GENERATION < 7) || (ctx->battlemon[client].hp == (s32)ctx->battlemon[client].maxhp)) {
+        if (GetBattlerAbility(ctx, client) == ABILITY_GALE_WINGS && ctx->moveTbl[move].type == TYPE_FLYING && ((GALE_WINGS_GENERATION < 7) || (ctx->battlemon[client].hp == (s32)ctx->battlemon[client].maxhp))) {
             priority++;
         }
 

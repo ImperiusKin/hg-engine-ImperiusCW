@@ -137,13 +137,13 @@ u16 GetLowLevel(struct BATTLE_PARAM *bp)
 	 
 	 return lowLevel;
  }
- 
+
 /**
  *  @brief generates a random valid species
  *		-ALL CREDIT TO Mixone-FinallyHere FOR THIS-
  *
  *  @return new species
- */
+ *
 u32 getValidRandomSpecies() {
     u32 new_species;
     new_species = 1 + gf_rand()%MAX_ID_RANDOMIZED;
@@ -151,6 +151,7 @@ u32 getValidRandomSpecies() {
     if(new_species > 507 && new_species < 544) new_species += 37 + gf_rand()%(MAX_ID_RANDOMIZED - 506);
     return new_species;
 }
+*/
 
 /**
  *  @brief generates a random valid form for the given species
@@ -158,7 +159,7 @@ u32 getValidRandomSpecies() {
  *
  *  @param species the species to get a form of
  *  @return new species
- */
+ *
 u32 getValidRandomSpeciesForm(u32 species) {
     u8 form_count = 1;
     struct FormData *PokeFormDataTbl = sys_AllocMemory(HEAPID_MAIN_HEAP, NELEMS_POKEFORMDATATBL * sizeof(struct FormData));
@@ -177,6 +178,7 @@ u32 getValidRandomSpeciesForm(u32 species) {
     sys_FreeMemoryEz(PokeFormDataTbl);
     return gf_rand()%form_count;
 }
+*/
 
 /**
  *  @brief create the trainer Party from the trainer data file and trainer party file
@@ -303,13 +305,15 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
         form_no = (species & 0xF800) >> 11;
         species &= 0x07FF;
         
-        #ifdef RANDOM_BATTLE_TOWER
+        /*
+		#ifdef RANDOM_BATTLE_TOWER
         if ((bp->trainer_id[num] == 105) || (bp->trainer_id[num] == 106))
 		{
 			species = getValidRandomSpecies();
 			form_no = getValidRandomSpeciesForm(species);
 		}
         #endif
+		*/
 
         // item field - conditional
         if (bp->trainer_data[num].data_type & TRAINER_DATA_TYPE_ITEMS)
@@ -334,6 +338,7 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
             ability = buf[offset] | (buf[offset+1] << 8);
             offset += 2;
 			
+		/*
 		#ifdef RANDOM_BATTLE_TOWER
 		const randomAbil = gf_rand()%2;
 			if ((bp->trainer_id[num] == 105) || (bp->trainer_id[num] == 106))
@@ -341,6 +346,8 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
 				ability = randomAbil;
 			}
 		#endif
+		*/
+		
         }
 
         // custom ball field

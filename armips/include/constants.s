@@ -21,8 +21,6 @@
 .equ TYPE_ICE, 15
 .equ TYPE_DRAGON, 16
 .equ TYPE_DARK, 17
-.equ TYPE_TYPELESS 18
-.equ TYPE_STELLAR  19
 
 // body colors
 
