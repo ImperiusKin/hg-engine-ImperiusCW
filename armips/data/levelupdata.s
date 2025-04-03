@@ -2038,7 +2038,7 @@ levelup SPECIES_SHELLDER
     learnset MOVE_WITHDRAW, 4
     learnset MOVE_ICICLE_SPEAR, 13
     learnset MOVE_SUPERSONIC, 14
-    learnset MOVE_LEER, 15
+    learnset MOVE_ROCK_BLAST, 15
     learnset MOVE_ICE_SHARD, 17
     learnset MOVE_PROTECT, 22
     learnset MOVE_CLAMP, 25
@@ -2055,11 +2055,12 @@ levelup SPECIES_SHELLDER
 
 levelup SPECIES_CLOYSTER
     learnset MOVE_ICICLE_SPEAR, 0
+	learnset MOVE_SHELL_SMASH, 0
     learnset MOVE_ICICLE_SPEAR, 1
     learnset MOVE_ICICLE_CRASH, 1
     learnset MOVE_TOXIC_SPIKES, 1
     learnset MOVE_SPIKES, 1
-    learnset MOVE_LEER, 1
+    learnset MOVE_ROCK_BLAST, 1
     learnset MOVE_WHIRLPOOL, 1
     learnset MOVE_SUPERSONIC, 1
     learnset MOVE_AURORA_BEAM, 1
