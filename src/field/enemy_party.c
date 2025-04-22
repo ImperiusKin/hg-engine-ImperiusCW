@@ -660,6 +660,9 @@ BOOL LONG_CALL AddWildPartyPokemon(int inTarget, EncounterInfo *encounterInfo, s
     u8 change_form = 0;
     u8 form_no;
     u16 species;
+	
+	u16 IV_31;
+	IV_31 = 31;
 		
     if (encounterInfo->isEgg == 0 && encounterInfo->ability == ABILITY_COMPOUND_EYES)
     {
@@ -733,10 +736,6 @@ _skipLevelScale:
 	}
 	
 	#ifdef ALL_PERFECT_IVS
-	
-	u16 IV_31;
-	IV_31 = 31;
-	
 	SetMonData(encounterPartyPokemon, MON_DATA_HP_IV, &IV_31);
 	SetMonData(encounterPartyPokemon, MON_DATA_ATK_IV, &IV_31);
 	SetMonData(encounterPartyPokemon, MON_DATA_DEF_IV, &IV_31);
