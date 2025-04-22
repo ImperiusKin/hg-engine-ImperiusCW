@@ -677,9 +677,6 @@ BOOL LONG_CALL AddWildPartyPokemon(int inTarget, EncounterInfo *encounterInfo, s
 	u16 highLevel = GetHighLevel(bp);
 	u16 lowLevel = GetLowLevel(bp);
 	
-	u16 IV_31;
-	IV_31 = 31;
-	
 	level = GetMonData(encounterPartyPokemon, MON_DATA_LEVEL, NULL);
 	
 	/*
@@ -736,6 +733,9 @@ _skipLevelScale:
 	}
 	
 	#ifdef ALL_PERFECT_IVS
+	
+	u16 IV_31;
+	IV_31 = 31;
 	
 	SetMonData(encounterPartyPokemon, MON_DATA_HP_IV, &IV_31);
 	SetMonData(encounterPartyPokemon, MON_DATA_ATK_IV, &IV_31);
