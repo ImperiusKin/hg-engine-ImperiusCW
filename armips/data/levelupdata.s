@@ -800,11 +800,11 @@ levelup SPECIES_VULPIX
     learnset MOVE_EMBER, 1
     learnset MOVE_TAIL_WHIP, 1
     learnset MOVE_DISABLE, 4
-    learnset MOVE_TAIL_WHIP, 4
-    learnset MOVE_ROAR, 7
-    learnset MOVE_QUICK_ATTACK, 8
-    learnset MOVE_BABY_DOLL_EYES, 9
-    learnset MOVE_SPITE, 12
+    learnset MOVE_ROAR, 4
+    learnset MOVE_QUICK_ATTACK, 7
+    learnset MOVE_BABY_DOLL_EYES, 8
+    learnset MOVE_CONFUSION, 11
+    learnset MOVE_SPITE, 14
     learnset MOVE_INCINERATE, 16
     learnset MOVE_CONFUSE_RAY, 16
     learnset MOVE_PAYBACK, 18
@@ -830,6 +830,7 @@ levelup SPECIES_NINETALES
     learnset MOVE_EMBER, 1
     learnset MOVE_ROAR, 1
     learnset MOVE_BABY_DOLL_EYES, 1
+	learnset MOVE_CONFUSION, 1
     learnset MOVE_INCINERATE, 1
     learnset MOVE_PAYBACK, 1
     learnset MOVE_HEX, 1
