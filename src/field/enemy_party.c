@@ -735,6 +735,7 @@ _skipLevelScale:
 	SetMonData(encounterPartyPokemon, MON_DATA_SPATK_IV, &IV_31);
 	SetMonData(encounterPartyPokemon, MON_DATA_SPDEF_IV, &IV_31);
 	SetMonData(encounterPartyPokemon, MON_DATA_SPEED_IV, &IV_31);
+	RecalcPartyPokemonStats(encounterPartyPokemon);
 	
 	#endif
 	
