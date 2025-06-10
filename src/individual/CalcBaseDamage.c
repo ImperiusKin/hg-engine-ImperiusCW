@@ -842,6 +842,17 @@ int UNUSED CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 sid
         {
             defense = defense * 15 / 10;
         }
+
+        #ifdef IMPLEMENT_BUFF_HAIL //add snow def boost to Hail
+		
+		if ((field_cond & WEATHER_HAIL_ANY) &&
+            ((DefendingMon.type1 == TYPE_ICE) || (DefendingMon.type2 == TYPE_ICE)))
+        {
+            defense = defense * 15 / 10;
+        }
+		
+		#endif
+        
         if ((field_cond & WEATHER_SUNNY_ANY) &&
             (CheckSideAbility(bw, sp, CHECK_ABILITY_SAME_SIDE_HP, attacker, ABILITY_FLOWER_GIFT)))
         {
@@ -980,7 +991,21 @@ int UNUSED CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 sid
                 break;
             }
         }
-
+        
+        #ifdef IMPLEMENT_BUFF_HAIL
+		
+		if (field_cond & WEATHER_HAIL_ANY) // Hail boosts ice
+        {
+            switch (movetype)
+            {
+            case TYPE_ICE:
+                damage = damage * 15 / 10;
+                break;
+            }
+        }
+		
+		#endif
+        
         if (AttackingMon.ability == ABILITY_SAND_FORCE // sand force boosts damage in sand for certain move types
          && field_cond & WEATHER_SANDSTORM_ANY
          && (movetype == TYPE_GROUND || movetype == TYPE_ROCK || movetype == TYPE_STEEL))
