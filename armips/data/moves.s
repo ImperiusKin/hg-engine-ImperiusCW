@@ -1931,9 +1931,9 @@ movedata MOVE_MIRROR_MOVE, "Mirror Move"
     movedescription MOVE_MIRROR_MOVE, "The user counters\nthe foe by mimicking\nthe move last used\nby the foe."
 
 movedata MOVE_SELF_DESTRUCT, "Self-Destruct"
-    battleeffect MOVE_EFFECT_HALVE_DEFENSE
+    battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
-    basepower 200
+    basepower 100
     type TYPE_NORMAL
     accuracy 100
     pp 5
@@ -2379,13 +2379,13 @@ movedata MOVE_SPORE, "Spore"
     movedescription MOVE_SPORE, "The user scatters\nbursts of spores\nthat induce sleep.\n\n"
 
 movedata MOVE_FLASH, "Flash"
-    battleeffect MOVE_EFFECT_ATK_DOWN
+    battleeffect MOVE_EFFECT_LOWER_ATTACK_HIT
     pss SPLIT_SPECIAL
     basepower 60
     type TYPE_ELECTRIC
     accuracy 100
     pp 20
-    effectchance 0
+    effectchance 100
     target RANGE_SINGLE_TARGET
     priority 0
     flags FLAG_HIDE_SHADOW | FLAG_MIRROR_MOVE | FLAG_MAGIC_COAT | FLAG_PROTECT
@@ -2459,9 +2459,9 @@ movedata MOVE_CRABHAMMER, "Crabhammer"
     movedescription MOVE_CRABHAMMER, "The foe is hammered\nwith a large pincer.\nThis move has a high\ncritical-hit ratio.\n"
 
 movedata MOVE_EXPLOSION, "Explosion"
-    battleeffect MOVE_EFFECT_HALVE_DEFENSE
+    battleeffect MOVE_EFFECT_HIT
     pss SPLIT_PHYSICAL
-    basepower 250
+    basepower 150
     type TYPE_NORMAL
     accuracy 100
     pp 5
@@ -5502,7 +5502,7 @@ movedata MOVE_COVET, "Covet"
     battleeffect MOVE_EFFECT_STEAL_HELD_ITEM
     pss SPLIT_PHYSICAL
     basepower 60
-    type TYPE_NORMAL
+    type (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_NORMAL
     accuracy 100
     pp 25
     effectchance 0
