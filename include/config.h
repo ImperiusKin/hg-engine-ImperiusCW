@@ -173,4 +173,10 @@
 // comment out PERFECT_WILD_IVS to return to random IVs
 #define PERFECT_STARTER_IVS
 
+// IMPLEMENT_BUFF_HAIL defines whether or not to add additional Hail buffs
+// Adds both 1.5x Defense boost from Snow as well as 1.5x Ice-type damage boost
+// requires SNOW_WARNING_GENERATION in armips/include/config.s to be >= 8
+// comment out the line for vanilla Hail behavior
+#define IMPLEMENT_BUFF_HAIL
+
 #endif
