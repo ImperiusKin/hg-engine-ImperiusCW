@@ -56,7 +56,7 @@ BOOL ScrCmd_GiveEgg(SCRIPTCONTEXT *ctx)
             ClearScriptFlag(HIDDEN_ABILITIES_FLAG);
         }
             
-        #ifdef ALL_PERFECT_IVS
+        	#ifdef ALL_PERFECT_IVS
 	
 		u16 IV_31;
 		IV_31 = 31;
@@ -132,7 +132,7 @@ BOOL ScrCmd_GiveTogepiEgg(SCRIPTCONTEXT *ctx) {
         ClearScriptFlag(HIDDEN_ABILITIES_FLAG);
     }
 
-        #ifdef ALL_PERFECT_IVS
+        	#ifdef ALL_PERFECT_IVS
 	
 		u16 IV_31;
 		IV_31 = 31;
