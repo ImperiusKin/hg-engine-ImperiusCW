@@ -55,7 +55,21 @@ BOOL ScrCmd_GiveEgg(SCRIPTCONTEXT *ctx)
             ResetPartyPokemonAbility(pokemon);
             ClearScriptFlag(HIDDEN_ABILITIES_FLAG);
         }
-
+            
+        #ifdef ALL_PERFECT_IVS
+	
+		u16 IV_31;
+		IV_31 = 31;
+	
+		SetMonData(pokemon, MON_DATA_HP_IV, &IV_31);
+		SetMonData(pokemon, MON_DATA_ATK_IV, &IV_31);
+		SetMonData(pokemon, MON_DATA_DEF_IV, &IV_31);
+		SetMonData(pokemon, MON_DATA_SPATK_IV, &IV_31);
+		SetMonData(pokemon, MON_DATA_SPDEF_IV, &IV_31);
+		SetMonData(pokemon, MON_DATA_SPEED_IV, &IV_31);
+	
+		#endif
+        
         PokeParty_Add(party, pokemon);
         sys_FreeMemoryEz(pokemon);
     }
@@ -118,7 +132,20 @@ BOOL ScrCmd_GiveTogepiEgg(SCRIPTCONTEXT *ctx) {
         ClearScriptFlag(HIDDEN_ABILITIES_FLAG);
     }
 
-
+        #ifdef ALL_PERFECT_IVS
+	
+		u16 IV_31;
+		IV_31 = 31;
+	
+		SetMonData(togepi, MON_DATA_HP_IV, &IV_31);
+		SetMonData(togepi, MON_DATA_ATK_IV, &IV_31);
+		SetMonData(togepi, MON_DATA_DEF_IV, &IV_31);
+		SetMonData(togepi, MON_DATA_SPATK_IV, &IV_31);
+		SetMonData(togepi, MON_DATA_SPDEF_IV, &IV_31);
+		SetMonData(togepi, MON_DATA_SPEED_IV, &IV_31);
+	
+		#endif
+    
     PokeParty_Add(party, togepi);
 
     sys_FreeMemoryEz(togepi);
