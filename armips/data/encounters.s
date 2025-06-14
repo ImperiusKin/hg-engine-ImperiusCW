@@ -363,7 +363,7 @@ pokemon SPECIES_SPINARAK
 pokemon SPECIES_POOCHYENA
 pokemon SPECIES_SIZZLIPEDE
 pokemon SPECIES_SCATTERBUG
-pokemon SPECIES_PURRLOIN
+monwithform SPECIES_ZIGZAGOON, 1
 pokemon SPECIES_BUNEARY
 pokemon SPECIES_GOTHITA
 pokemon SPECIES_BLIPBUG
@@ -452,7 +452,7 @@ pokemon SPECIES_BOUNSWEET
 pokemon SPECIES_PIDGEY
 pokemon SPECIES_CATERPIE
 pokemon SPECIES_EMOLGA
-pokemon SPECIES_MEOWTH
+monwithform SPECIES_MEOWTH, 2
 pokemon SPECIES_BELLSPROUT
 pokemon SPECIES_SHROOMISH
 pokemon SPECIES_COMBEE
@@ -466,7 +466,7 @@ pokemon SPECIES_SKORUPI
 pokemon SPECIES_SPINARAK
 pokemon SPECIES_VULLABY
 pokemon SPECIES_DROWZEE
-pokemon SPECIES_MEOWTH
+monwithform SPECIES_MEOWTH, 1
 pokemon SPECIES_JIGGLYPUFF
 pokemon SPECIES_SLAKOTH
 pokemon SPECIES_YUNGOOS
@@ -602,7 +602,7 @@ encounter SPECIES_NONE, 0, 0
 // old rod encounters
 encounter SPECIES_MAGIKARP, 10, 5
 encounter SPECIES_PSYDUCK, 10, 5
-encounter SPECIES_SLOWPOKE, 10, 5
+encounter SPECIES_BUIZEL, 10, 5
 encounter SPECIES_CLAUNCHER, 10, 5
 encounter SPECIES_POLIWAG, 10, 5
 
@@ -880,8 +880,8 @@ pokemon SPECIES_FIDOUGH
 
 // night encounter slots
 pokemon SPECIES_WOOPER
-pokemon SPECIES_WOOPER
-pokemon SPECIES_PONYTA
+monwithform SPECIES_WOOPER, 1
+monwithform SPECIES_PONYTA, 1
 pokemon SPECIES_POOCHYENA
 pokemon SPECIES_EKANS
 pokemon SPECIES_SKORUPI
@@ -917,7 +917,7 @@ encounter SPECIES_MAGIKARP, 10, 5
 encounter SPECIES_LOTAD, 10, 5
 encounter SPECIES_SURSKIT, 10, 5
 encounter SPECIES_WOOPER, 10, 5
-encounter SPECIES_TENTACOOL, 10, 5
+encounter SPECIES_KRABBY, 10, 5
 
 // good rod encounters
 encounter SPECIES_MAGIKARP, 20, 20
@@ -7120,7 +7120,7 @@ pokemon SPECIES_MAGBY
 pokemon SPECIES_RHYHORN
 
 // night encounter slots
-pokemon SPECIES_GEODUDE
+monwithform SPECIES_GEODUDE, 1
 pokemon SPECIES_LECHONK
 pokemon SPECIES_FARFETCHD
 pokemon SPECIES_LITLEO
@@ -7214,7 +7214,7 @@ pokemon SPECIES_GEODUDE
 pokemon SPECIES_ZUBAT
 pokemon SPECIES_DRILBUR
 pokemon SPECIES_DWEBBLE
-pokemon SPECIES_DIGLETT
+monwithform SPECIES_DIGLETT, 1
 pokemon SPECIES_DWEBBLE
 pokemon SPECIES_CHINGLING
 pokemon SPECIES_NOSEPASS
@@ -7224,7 +7224,7 @@ pokemon SPECIES_ABSOL
 pokemon SPECIES_LARVITAR
 
 // night encounter slots
-pokemon SPECIES_GEODUDE
+monwithform SPECIES_GEODUDE, 1
 pokemon SPECIES_ZUBAT
 pokemon SPECIES_WOOBAT
 pokemon SPECIES_DWEBBLE
