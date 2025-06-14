@@ -53,8 +53,8 @@ trainerdata 1, "Silver"
         move MOVE_KNOCK_OFF
         move MOVE_U_TURN
         move MOVE_STEEL_WING
-	ability ABILITY_POISON_HEAL
-	nature NATURE_JOLLY
+        ability ABILITY_POISON_HEAL
+        nature NATURE_JOLLY
         ballseal 0
 
         // mon 1
@@ -62,13 +62,13 @@ trainerdata 1, "Silver"
         abilityslot 0
         level 30
         pokemon SPECIES_MISMAGIUS
-	item ITEM_EXPERT_BELT
+        item ITEM_EXPERT_BELT
         move MOVE_SHADOW_SNEAK
         move MOVE_MYSTICAL_FIRE
         move MOVE_PSYCHIC_NOISE
         move MOVE_SHADOW_BALL
-	ability ABILITY_MAGIC_GUARD
-	nature NATURE_MODEST
+        ability ABILITY_MAGIC_GUARD
+        nature NATURE_MODEST
         ballseal 0
 
         // mon 2
@@ -76,21 +76,21 @@ trainerdata 1, "Silver"
         abilityslot 0
         level 31
         pokemon SPECIES_UMBREON
-	item ITEM_LEFTOVERS
+        item ITEM_LEFTOVERS
         move MOVE_PURSUIT
         move MOVE_KNOCK_OFF
         move MOVE_WISH
         move MOVE_DETECT
-	ability ABILITY_FUR_COAT
-	nature NATURE_BOLD
+        ability ABILITY_FUR_COAT
+        nature NATURE_BOLD
         ballseal 0
 
-	 // mon 3
+        // mon 3
         ivs 255
         abilityslot 0
         level 31
         pokemon SPECIES_URSARING
-	item ITEM_FLAME_ORB
+        item ITEM_FLAME_ORB
         move MOVE_HAMMER_ARM
         move MOVE_FACADE
         move MOVE_PLAY_ROUGH
@@ -174,13 +174,13 @@ trainerdata 4, "Wade"
         abilityslot 0
         level 12
         pokemon SPECIES_DUSTOX
-	item ITEM_ORAN_BERRY
-	move MOVE_STRUGGLE_BUG
-	move MOVE_FLASH
-	move MOVE_VENOSHOCK
-	move MOVE_TOXIC
-	ability ABILITY_SHIELD_DUST
-	nature NATURE_MODEST
+        item ITEM_ORAN_BERRY
+        move MOVE_STRUGGLE_BUG
+        move MOVE_FLASH
+        move MOVE_VENOSHOCK
+        move MOVE_TOXIC
+        ability ABILITY_SHIELD_DUST
+        nature NATURE_MODEST
         ballseal 0
 
         // mon 1
@@ -188,13 +188,13 @@ trainerdata 4, "Wade"
         abilityslot 0
         level 13
         pokemon SPECIES_VENIPEDE
-	item ITEM_ORAN_BERRY
-	move MOVE_VENOSHOCK
-	move MOVE_PIN_MISSILE
-	move MOVE_PAYBACK
-	move MOVE_ROCK_SMASH
-	ability ABILITY_POISON_TOUCH
-	nature NATURE_JOLLY
+        item ITEM_ORAN_BERRY
+        move MOVE_VENOSHOCK
+        move MOVE_PIN_MISSILE
+        move MOVE_PAYBACK
+        move MOVE_ROCK_SMASH
+        ability ABILITY_POISON_TOUCH
+        nature NATURE_JOLLY
         ballseal 0
 
         // mon 2
@@ -202,13 +202,13 @@ trainerdata 4, "Wade"
         abilityslot 0
         level 13
         pokemon SPECIES_DOTTLER
-	item ITEM_ORAN_BERRY
-	move MOVE_TOXIC
-	move MOVE_REFLECT
-	move MOVE_PSYBEAM
-	move MOVE_STRUGGLE_BUG
-	ability ABILITY_COMPOUND_EYES
-	nature NATURE_BOLD
+        item ITEM_ORAN_BERRY
+        move MOVE_TOXIC
+        move MOVE_REFLECT
+        move MOVE_PSYBEAM
+        move MOVE_STRUGGLE_BUG
+        ability ABILITY_COMPOUND_EYES
+        nature NATURE_BOLD
         ballseal 0
 
         // mon 3
@@ -216,13 +216,13 @@ trainerdata 4, "Wade"
         abilityslot 32
         level 13
         pokemon SPECIES_JOLTIK
-	item ITEM_ORAN_BERRY
-	move MOVE_MEGA_DRAIN
-	move MOVE_SPIDER_WEB
-	move MOVE_THUNDER_WAVE
-	move MOVE_STRUGGLE_BUG
-	ability ABILITY_UNNERVE
-	nature NATURE_MODEST
+        item ITEM_ORAN_BERRY
+        move MOVE_MEGA_DRAIN
+        move MOVE_SPIDER_WEB
+        move MOVE_THUNDER_WAVE
+        move MOVE_STRUGGLE_BUG
+        ability ABILITY_UNNERVE
+        nature NATURE_MODEST
         ballseal 0
     endparty
 
