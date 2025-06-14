@@ -664,13 +664,13 @@ trainerdata 18, "Justin"
         abilityslot 0
         level 16
         pokemon SPECIES_GOLDEEN
-	item ITEM_RINDO_BERRY
+        item ITEM_RINDO_BERRY
         move MOVE_AQUA_JET
         move MOVE_FLIP_TURN
         move MOVE_POISON_JAB
         move MOVE_DRILL_RUN
-	ability ABILITY_LIGHTNING_ROD
-	nature NATURE_JOLLY
+        ability ABILITY_LIGHTNING_ROD
+        nature NATURE_JOLLY
         ballseal 0
 
         // mon 1
@@ -678,13 +678,13 @@ trainerdata 18, "Justin"
         abilityslot 0
         level 16
         pokemon SPECIES_PSYDUCK
-	item ITEM_EVIOLITE
+        item ITEM_EVIOLITE
         move MOVE_WATER_PULSE
         move MOVE_FLIP_TURN
         move MOVE_ICE_BEAM
         move MOVE_VACUUM_WAVE
-	ability ABILITY_CLOUD_NINE
-	nature NATURE_MODEST
+        ability ABILITY_CLOUD_NINE
+        nature NATURE_MODEST
         ballseal 0
 
         // mon 2
@@ -692,13 +692,13 @@ trainerdata 18, "Justin"
         abilityslot 0
         level 16
         pokemon SPECIES_LOMBRE
-	item ITEM_NEVER_MELT_ICE
+        item ITEM_NEVER_MELT_ICE
         move MOVE_AURORA_BEAM
         move MOVE_FAKE_OUT
         move MOVE_ENERGY_BALL
         move MOVE_SCALD
-	ability ABILITY_OWN_TEMPO
-	nature NATURE_TIMID
+        ability ABILITY_OWN_TEMPO
+        nature NATURE_TIMID
         ballseal 0
     endparty
 
