@@ -21336,7 +21336,7 @@ levelup SPECIES_MEGA_ALAKAZAM
 
 levelup SPECIES_MEGA_SLOWBRO
     learnset MOVE_CURSE, 1
-    learnset MOVE_HEAL_PULSE, 
+    learnset MOVE_HEAL_PULSE, 1 
     learnset MOVE_TACKLE, 1
     learnset MOVE_TELEPORT, 1
     learnset MOVE_YAWN, 1
@@ -24191,7 +24191,7 @@ levelup SPECIES_LANDORUS_THERIAN
     learnset MOVE_BULLDOZE, 13
     learnset MOVE_ROCK_THROW, 19
     learnset MOVE_EXTRASENSORY, 25
-    learnset MOVE_SWORDS_DANCE, 3
+    learnset MOVE_SWORDS_DANCE, 31
     1earnset MOVE_EARTH_POWER, 37
     learnset MOVE_ROCK_SLIDE, 43
     learnset MOVE_EARTHQUAKE, 49
