@@ -765,7 +765,7 @@ scr_seq_0003_010:
 
 _0A18:
     goto_if_set 0x18F, _skipPCOnOff
-    scrcmd_500 90Add commentMore actions
+    scrcmd_500 90
     scrcmd_501 90
     scrcmd_308 90
 _skipPCOnOff:
@@ -1001,7 +1001,7 @@ _0DE7:
 
 _0DF0:
     closemsg
-    play_se SEQ_SE_DP_PC_LOGOFFAdd commentMore actions
+    play_se SEQ_SE_DP_PC_LOGOFF
     goto_if_set 0x18F, _skipPCOff
     call _0A23
 _skipPCOff:
