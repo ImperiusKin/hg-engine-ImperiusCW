@@ -30198,3 +30198,213 @@ trainerdata 793, "Wulfric"
         nature NATURE_MODEST
         ballseal 0
     endparty
+
+trainerdata 794, "Roxanne"
+    trainermontype TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ABILITY
+    trainerclass TRAINERCLASS_PKMN_TRAINER_ROXANNE
+    nummons 3
+    item ITEM_NONE
+    item ITEM_NONE
+    item ITEM_NONE
+    item ITEM_NONE
+    aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
+    battletype SINGLE_BATTLE
+    endentry
+
+    party 794
+        // mon 0
+        ivs 255
+        abilityslot 0
+        level 17
+        monwithform SPECIES_GEODUDE, 1
+        item ITEM_QUICK_CLAW
+        move MOVE_SPARK
+        move MOVE_BULLDOZE
+        move MOVE_POWER_UP_PUNCH
+        move MOVE_ROCK_TOMB
+        ability ABILITY_STURDY
+        nature NATURE_ADAMANT
+        ballseal 0
+
+        // mon 1
+        ivs 255
+        abilityslot 0
+        level 18
+        pokemon SPECIES_LUNATONE
+        item ITEM_QUICK_CLAW
+        move MOVE_MOONBLAST
+        move MOVE_PSYSHOCK
+        move MOVE_POWER_GEM
+        move MOVE_HYPNOSIS
+        ability ABILITY_LEVITATE
+        nature NATURE_MODEST
+        ballseal 0
+
+        // mon 2
+        ivs 255
+        abilityslot 0
+        level 19
+        pokemon SPECIES_NOSEPASS
+        item ITEM_BERRY_JUICE
+        move MOVE_THUNDER_WAVE
+        move MOVE_ROCK_BLAST
+        move MOVE_BULLDOZE
+        move MOVE_THUNDER_PUNCH
+        ability ABILITY_STURDY
+        nature NATURE_SASSY
+        ballseal 0
+    endparty
+
+trainerdata 795, "Roxanne"
+    trainermontype TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ABILITY
+    trainerclass TRAINERCLASS_PKMN_TRAINER_ROXANNE
+    nummons 4
+    item ITEM_NONE
+    item ITEM_NONE
+    item ITEM_NONE
+    item ITEM_NONE
+    aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
+    battletype SINGLE_BATTLE
+    endentry
+
+    party 795
+        // mon 0
+        ivs 255
+        abilityslot 0
+        level 29
+        pokemon SPECIES_DWEBBLE
+        item ITEM_EVIOLITE
+        move MOVE_STEALTH_ROCK
+        move MOVE_POUNCE
+        move MOVE_BULLDOZE
+        move MOVE_ROCK_TOMB
+        ability ABILITY_STURDY
+        nature NATURE_ADAMANT
+        ballseal 0
+
+        // mon 1
+        ivs 255
+        abilityslot 32
+        level 29
+        monwithform SPECIES_GRAVELER, 1
+        item ITEM_SHUCA_BERRY
+        move MOVE_THUNDER_PUNCH
+        move MOVE_BULLDOZE
+        move MOVE_POWER_UP_PUNCH
+        move MOVE_VOLT_SWITCH
+        ability ABILITY_STURDY
+        nature NATURE_ADAMANT
+        ballseal 0
+
+        // mon 2
+        ivs 255
+        abilityslot 0
+        level 30
+        pokemon SPECIES_LUNATONE
+        item ITEM_QUICK_CLAW
+        move MOVE_MOONBLAST
+        move MOVE_LUMINA_CRASH
+        move MOVE_POWER_GEM
+        move MOVE_HYPNOSIS
+        ability ABILITY_LEVITATE
+        nature NATURE_MODEST
+        ballseal 0
+
+        // mon 3
+        ivs 255
+        abilityslot 0
+        level 31
+        pokemon SPECIES_PROBOPASS
+        item ITEM_SITRUS_BERRY
+        move MOVE_BODY_PRESS
+        move MOVE_POWER_GEM
+        move MOVE_DAZZLING_GLEAM
+        move MOVE_VOLT_SWITCH
+        ability ABILITY_LEVITATE
+        nature NATURE_BOLD
+        ballseal 0
+    endparty
+
+trainerdata 796, "Roxanne"
+    trainermontype TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ABILITY
+    trainerclass TRAINERCLASS_PKMN_TRAINER_ROXANNE
+    nummons 5
+    item ITEM_NONE
+    item ITEM_NONE
+    item ITEM_NONE
+    item ITEM_NONE
+    aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
+    battletype SINGLE_BATTLE
+    endentry
+
+    party 796
+        // mon 0
+        ivs 255
+        abilityslot 0
+        level 37
+        pokemon SPECIES_CRUSTLE
+        item ITEM_LOADED_DICE
+        move MOVE_STEALTH_ROCK
+        move MOVE_BODY_PRESS
+        move MOVE_BULLDOZE
+        move MOVE_ROCK_BLAST
+        ability ABILITY_STURDY
+        nature NATURE_IMPISH
+        ballseal 0
+
+        // mon 1
+        ivs 255
+        abilityslot 0
+        level 37
+        pokemon SPECIES_BARBARACLE
+        item ITEM_RINDO_BERRY
+        move MOVE_POWER_UP_PUNCH
+        move MOVE_POISON_JAB
+        move MOVE_LIQUIDATION
+        move MOVE_ACCELEROCK
+        ability ABILITY_TOUGH_CLAWS
+        nature NATURE_ADAMANT
+        ballseal 0
+
+        // mon 2
+        ivs 255
+        abilityslot 0
+        level 38
+        monwithform SPECIES_GOLEM, 1
+        item ITEM_SHUCA_BERRY
+        move MOVE_FIRE_PUNCH
+        move MOVE_BODY_SLAM
+        move MOVE_IRON_HEAD
+        move MOVE_VOLT_SWITCH
+        ability ABILITY_GALVANIZE
+        nature NATURE_ADAMANT
+        ballseal 0
+
+        // mon 3
+        ivs 255
+        abilityslot 0
+        level 38
+        pokemon SPECIES_LUNATONE
+        item ITEM_QUICK_CLAW
+        move MOVE_MOONBLAST
+        move MOVE_LUMINA_CRASH
+        move MOVE_POWER_GEM
+        move MOVE_TELEPORT
+        ability ABILITY_LEVITATE
+        nature NATURE_MODEST
+        ballseal 0
+
+        // mon 4
+        ivs 255
+        abilityslot 0
+        level 39
+        pokemon SPECIES_PROBOPASS
+        item ITEM_SITRUS_BERRY
+        move MOVE_BODY_PRESS
+        move MOVE_POWER_GEM
+        move MOVE_DAZZLING_GLEAM
+        move MOVE_VOLT_SWITCH
+        ability ABILITY_LEVITATE
+        nature NATURE_BOLD
+        ballseal 0
+    endparty
