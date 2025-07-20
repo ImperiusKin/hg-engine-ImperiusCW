@@ -728,7 +728,7 @@ _skipLevelScale:
         space_for_setmondata = 0;
     }
 
-    WildMonSetRandomHeldItem(encounterPartyPokemon, bp->fight_type, range);
+    WildMonSetRandomHeldItem(encounterPartyPokemon, encounterBattleParam->fight_type, range);
 
     if (species == SPECIES_UNOWN)
     {
@@ -754,5 +754,5 @@ _skipLevelScale:
         ResetPartyPokemonAbility(encounterPartyPokemon);
         InitBoxMonMoveset(&encounterPartyPokemon->box);
     }
-    return PokeParty_Add(bp->poke_party[inTarget], encounterPartyPokemon);
+    return PokeParty_Add(encounterBattleParam->poke_party[inTarget], encounterPartyPokemon);
 }
