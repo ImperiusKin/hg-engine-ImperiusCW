@@ -741,5 +741,5 @@ _skipLevelScale:
 
     ChangeToBattleForm(encounterPartyPokemon);
 
-    return PokeParty_Add(encounterBattleParam->poke_party[inTarget], encounterPartyPokemon);
+    return PokeParty_Add(bp->poke_party[inTarget], encounterPartyPokemon);
 }
