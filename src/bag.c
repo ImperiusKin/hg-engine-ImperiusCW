@@ -214,7 +214,7 @@ ITEM_SLOT *Bag_GetItemSlotForRemove(BAG_DATA *bag, u16 itemId, u16 quantity, int
 
 BOOL Bag_TakeItem(BAG_DATA *bag, u16 itemId, u16 quantity, int heap_id) {
     ITEM_SLOT *slot = Bag_GetItemSlotForRemove(bag, itemId, quantity, heap_id);
-    if (slot == NULL) {
+    if (slot == NULL || itemId == ITEM_INFINITE_CANDY || itemId == ITEM_POKE_VIAL || itemId == ITEM_ENDLESS_ROPE || itemId == ITEM_RENEWING_ASHES ){
         return FALSE;
     }
     slot->quantity -= quantity;
