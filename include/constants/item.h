@@ -868,6 +868,14 @@
 #define ITEM_HEARTHFLAME_MASK   (ITEM_PIXIE_PLATE + 214)
 #define ITEM_METAL_ALLOY        (ITEM_PIXIE_PLATE + 215)
 
+//My Items
+#define ITEM_INFINITE_CANDY     (ITEM_PIXIE_PLATE + 216) //800
+#define ITEM_POKE_VIAL          (ITEM_PIXIE_PLATE + 217) //801
+#define ITEM_TIME_CHANGER       (ITEM_PIXIE_PLATE + 218) //802
+#define ITEM_ENDLESS_ROPE       (ITEM_PIXIE_PLATE + 219)
+#define ITEM_STEEL_FEATHER      (ITEM_PIXIE_PLATE + 220)
+#define ITEM_RENEWING_ASHES     (ITEM_PIXIE_PLATE + 221)
+  
 #define MAX_BASE_ITEM_NUM ITEM_METAL_ALLOY
 
 // define your custom move effects below like this
