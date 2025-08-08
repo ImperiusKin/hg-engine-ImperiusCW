@@ -5213,7 +5213,7 @@ const ITEMDATA __data[] =
 
 [ITEM_SUN_STONE] =
 {
-    .price = 2100,
+    .price = 500,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -5278,7 +5278,7 @@ const ITEMDATA __data[] =
 
 [ITEM_MOON_STONE] =
 {
-    .price = 2100,
+    .price = 500,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -5343,7 +5343,7 @@ const ITEMDATA __data[] =
 
 [ITEM_FIRE_STONE] =
 {
-    .price = 2100,
+    .price = 500,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -5408,7 +5408,7 @@ const ITEMDATA __data[] =
 
 [ITEM_THUNDER_STONE] =
 {
-    .price = 2100,
+    .price = 500,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -5473,7 +5473,7 @@ const ITEMDATA __data[] =
 
 [ITEM_WATER_STONE] =
 {
-    .price = 2100,
+    .price = 500,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -5538,7 +5538,7 @@ const ITEMDATA __data[] =
 
 [ITEM_LEAF_STONE] =
 {
-    .price = 2100,
+    .price = 500,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -6968,7 +6968,7 @@ const ITEMDATA __data[] =
 
 [ITEM_SHINY_STONE] =
 {
-    .price = 2100,
+    .price = 500,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -7033,7 +7033,7 @@ const ITEMDATA __data[] =
 
 [ITEM_DUSK_STONE] =
 {
-    .price = 2100,
+    .price = 500,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -7098,7 +7098,7 @@ const ITEMDATA __data[] =
 
 [ITEM_DAWN_STONE] =
 {
-    .price = 2100,
+    .price = 500,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -7163,7 +7163,7 @@ const ITEMDATA __data[] =
 
 [ITEM_OVAL_STONE] =
 {
-    .price = 2100,
+    .price = 500,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -7228,7 +7228,7 @@ const ITEMDATA __data[] =
 
 [ITEM_ODD_KEYSTONE] =
 {
-    .price = 2100,
+    .price = 500,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -8658,7 +8658,7 @@ const ITEMDATA __data[] =
 
 [ITEM_ORAN_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 1,
     .holdEffect = HOLD_EFFECT_HP_RESTORE,
     .holdEffectParam = 10,
     .pluckEffect = 7,
@@ -9568,7 +9568,7 @@ const ITEMDATA __data[] =
 
 [ITEM_POMEG_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -9625,9 +9625,9 @@ const ITEMDATA __data[] =
         .spdef_ev_up_param = 0,
         .hp_restore_param = 0,
         .pp_restore_param = 0,
-        .friendship_mod_lo_param =  10,
-        .friendship_mod_med_param = 5,
-        .friendship_mod_hi_param =  2,
+        .friendship_mod_lo_param =  255,
+        .friendship_mod_med_param = 255,
+        .friendship_mod_hi_param =  255,
     },
 },
 
@@ -10543,7 +10543,7 @@ const ITEMDATA __data[] =
 
 [ITEM_OCCA_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_FIRE,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -10608,7 +10608,7 @@ const ITEMDATA __data[] =
 
 [ITEM_PASSHO_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_WATER,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -10673,7 +10673,7 @@ const ITEMDATA __data[] =
 
 [ITEM_WACAN_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_ELECTRIC,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -10738,7 +10738,7 @@ const ITEMDATA __data[] =
 
 [ITEM_RINDO_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_GRASS,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -10803,7 +10803,7 @@ const ITEMDATA __data[] =
 
 [ITEM_YACHE_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_ICE,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -10868,7 +10868,7 @@ const ITEMDATA __data[] =
 
 [ITEM_CHOPLE_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_FIGHT,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -10933,7 +10933,7 @@ const ITEMDATA __data[] =
 
 [ITEM_KEBIA_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_POISON,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -10998,7 +10998,7 @@ const ITEMDATA __data[] =
 
 [ITEM_SHUCA_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_GROUND,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -11063,7 +11063,7 @@ const ITEMDATA __data[] =
 
 [ITEM_COBA_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_FLYING,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -11128,7 +11128,7 @@ const ITEMDATA __data[] =
 
 [ITEM_PAYAPA_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_PSYCHIC,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -11193,7 +11193,7 @@ const ITEMDATA __data[] =
 
 [ITEM_TANGA_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_BUG,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -11258,7 +11258,7 @@ const ITEMDATA __data[] =
 
 [ITEM_CHARTI_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_ROCK,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -11323,7 +11323,7 @@ const ITEMDATA __data[] =
 
 [ITEM_KASIB_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_GHOST,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -11388,7 +11388,7 @@ const ITEMDATA __data[] =
 
 [ITEM_HABAN_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_DRAGON,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -11453,7 +11453,7 @@ const ITEMDATA __data[] =
 
 [ITEM_COLBUR_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_DARK,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -11518,7 +11518,7 @@ const ITEMDATA __data[] =
 
 [ITEM_BABIRI_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_STEEL,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -11583,7 +11583,7 @@ const ITEMDATA __data[] =
 
 [ITEM_CHILAN_BERRY - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_NORMAL,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -12948,7 +12948,7 @@ const ITEMDATA __data[] =
 
 [ITEM_KINGS_ROCK - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 100,
+    .price = 500,
     .holdEffect = HOLD_EFFECT_SOMETIMES_FLINCH,
     .holdEffectParam = 10,
     .pluckEffect = 0,
@@ -12960,7 +12960,7 @@ const ITEMDATA __data[] =
     .selectable = FALSE,
     .fieldPocket = POCKET_ITEMS,
     .battlePocket = BATTLE_POCKET_NONE,
-    .fieldUseFunc = 0,
+    .fieldUseFunc = 20,
     .battleUseFunc = 0,
     .partyUse = 0,
     .partyUseParam = {
@@ -12975,7 +12975,7 @@ const ITEMDATA __data[] =
         .revive = FALSE,
         .revive_all = FALSE,
         .level_up = FALSE,
-        .evolve = FALSE,
+        .evolve = TRUE,
         .atk_stages = 0,
         .def_stages = 0,
         .spatk_stages = 0,
@@ -13728,7 +13728,7 @@ const ITEMDATA __data[] =
 
 [ITEM_METAL_COAT - NUM_UNKNOWN_SLOTS] =
 {
-    .price = 100,
+    .price = 500,
     .holdEffect = HOLD_EFFECT_STRENGTHEN_STEEL,
     .holdEffectParam = 20,
     .pluckEffect = 0,
@@ -13740,7 +13740,7 @@ const ITEMDATA __data[] =
     .selectable = FALSE,
     .fieldPocket = POCKET_ITEMS,
     .battlePocket = BATTLE_POCKET_NONE,
-    .fieldUseFunc = 0,
+    .fieldUseFunc = 20,
     .battleUseFunc = 0,
     .partyUse = 0,
     .partyUseParam = {
@@ -13755,7 +13755,7 @@ const ITEMDATA __data[] =
         .revive = FALSE,
         .revive_all = FALSE,
         .level_up = FALSE,
-        .evolve = FALSE,
+        .evolve = TRUE,
         .atk_stages = 0,
         .def_stages = 0,
         .spatk_stages = 0,
@@ -37388,7 +37388,7 @@ const ITEMDATA __data[] =
 
 [ITEM_PRISM_SCALE - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 2000,
+    .price = 500,
     .holdEffect = HOLD_EFFECT_EVOLVE_FEEBAS,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -37400,7 +37400,7 @@ const ITEMDATA __data[] =
     .selectable = FALSE,
     .fieldPocket = POCKET_ITEMS,
     .battlePocket = BATTLE_POCKET_NONE,
-    .fieldUseFunc = 0,
+    .fieldUseFunc = 20,
     .battleUseFunc = 0,
     .partyUse = 0,
     .partyUseParam = {
@@ -37415,7 +37415,7 @@ const ITEMDATA __data[] =
         .revive = FALSE,
         .revive_all = FALSE,
         .level_up = FALSE,
-        .evolve = FALSE,
+        .evolve = TRUE,
         .atk_stages = 0,
         .def_stages = 0,
         .spatk_stages = 0,
@@ -37713,7 +37713,7 @@ const ITEMDATA __data[] =
 
 [ITEM_ABILITY_CAPSULE - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 10000,
+    .price = 100,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -38948,7 +38948,7 @@ const ITEMDATA __data[] =
 
 [ITEM_ICE_STONE - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 2100,
+    .price = 500,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -39143,7 +39143,7 @@ const ITEMDATA __data[] =
 
 [ITEM_ABILITY_PATCH - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 250000,
+    .price = 100,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -40573,7 +40573,7 @@ const ITEMDATA __data[] =
 
 [ITEM_LINKING_CORD - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 8000,
+    .price = 500,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -41938,7 +41938,7 @@ const ITEMDATA __data[] =
 
 [ITEM_ROSELI_BERRY - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 20,
+    .price = 0,
     .holdEffect = HOLD_EFFECT_WEAKEN_SE_FAIRY,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -42914,8 +42914,8 @@ const ITEMDATA __data[] =
 [ITEM_NORMAL_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_NORMAL,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -42979,8 +42979,8 @@ const ITEMDATA __data[] =
 [ITEM_FIGHTING_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_FIGHTING,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43044,8 +43044,8 @@ const ITEMDATA __data[] =
 [ITEM_FLYING_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_FLYING,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43109,8 +43109,8 @@ const ITEMDATA __data[] =
 [ITEM_POISON_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_POISON,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43174,8 +43174,8 @@ const ITEMDATA __data[] =
 [ITEM_GROUND_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_GROUND,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43239,8 +43239,8 @@ const ITEMDATA __data[] =
 [ITEM_ROCK_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_ROCK,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43304,8 +43304,8 @@ const ITEMDATA __data[] =
 [ITEM_BUG_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_BUG,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43369,8 +43369,8 @@ const ITEMDATA __data[] =
 [ITEM_GHOST_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_GHOST,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43434,8 +43434,8 @@ const ITEMDATA __data[] =
 [ITEM_STEEL_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_STEEL,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43499,8 +43499,8 @@ const ITEMDATA __data[] =
 [ITEM_FIRE_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_FIRE,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43564,8 +43564,8 @@ const ITEMDATA __data[] =
 [ITEM_WATER_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_WATER,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43629,8 +43629,8 @@ const ITEMDATA __data[] =
 [ITEM_GRASS_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_GRASS,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43694,8 +43694,8 @@ const ITEMDATA __data[] =
 [ITEM_ELECTRIC_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_ELECTRIC,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43759,8 +43759,8 @@ const ITEMDATA __data[] =
 [ITEM_PSYCHIC_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_PSYCHIC,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43824,8 +43824,8 @@ const ITEMDATA __data[] =
 [ITEM_ICE_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_ICE,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43889,8 +43889,8 @@ const ITEMDATA __data[] =
 [ITEM_DRAGON_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_DRAGON,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -43954,8 +43954,8 @@ const ITEMDATA __data[] =
 [ITEM_DARK_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_DARK,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -44019,8 +44019,8 @@ const ITEMDATA __data[] =
 [ITEM_FAIRY_GEM - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 200,
-    .holdEffect = HOLD_EFFECT_POWERING_UP_MOVE_ONCE,
-    .holdEffectParam = TYPE_FAIRY,
+    .holdEffect = 0,
+    .holdEffectParam = 0,
     .pluckEffect = 0,
     .flingEffect = 0,
     .flingPower = 30,
@@ -50515,7 +50515,6 @@ const ITEMDATA __data[] =
         .friendship_mod_hi_param =  0,
     },
 },
-
 [ITEM_INFINITE_CANDY - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
     .price = 0,
