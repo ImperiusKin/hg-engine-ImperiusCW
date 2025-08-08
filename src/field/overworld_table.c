@@ -1676,6 +1676,61 @@ struct OVERWORLD_TAG gOWTagToFileNum[] = // skip down a bit to see the parts tha
     { .tag = 1795, .gfx =  297, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_IRON_CROWN
     { .tag = 1796, .gfx =  297, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_TERAPAGOS
     { .tag = 1797, .gfx = 1547, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_PECHARUNT
+
+    NEW_NPC_ENTRY(0), //Metal
+    NEW_NPC_ENTRY(1), //Roxanne
+    NEW_NPC_ENTRY(2), //Cheren
+    NEW_NPC_ENTRY(3), //Viola
+    NEW_NPC_ENTRY(4), //Milo
+    NEW_NPC_ENTRY(5), //Katy
+    NEW_NPC_ENTRY(6), //Brawly
+    NEW_NPC_ENTRY(7), //Roxie
+    NEW_NPC_ENTRY(8), //Grant
+    NEW_NPC_ENTRY(9), //Nessa
+    NEW_NPC_ENTRY(10), //Brassius
+    NEW_NPC_ENTRY(11), //Wattson
+    NEW_NPC_ENTRY(12), //Burgh
+    NEW_NPC_ENTRY(13), //Korrina
+    NEW_NPC_ENTRY(14), //Kabu
+    NEW_NPC_ENTRY(15), //Iono
+    NEW_NPC_ENTRY(16), //Flannery
+    NEW_NPC_ENTRY(17), //Elesa
+    NEW_NPC_ENTRY(18), //Ramos
+    NEW_NPC_ENTRY(19), //Bea
+    NEW_NPC_ENTRY(20), //Allister
+    NEW_NPC_ENTRY(21), //Kofu
+    NEW_NPC_ENTRY(22), //Wally
+    NEW_NPC_ENTRY(23), //Clay
+    NEW_NPC_ENTRY(24), //Clemont
+    NEW_NPC_ENTRY(25), //Opal
+    NEW_NPC_ENTRY(26), //Bede
+    NEW_NPC_ENTRY(27), //Larry
+    NEW_NPC_ENTRY(28), //Winona
+    NEW_NPC_ENTRY(29), //Skyla
+    NEW_NPC_ENTRY(30), //Valerie
+    NEW_NPC_ENTRY(31), //Gordie
+    NEW_NPC_ENTRY(32), //Melony
+    NEW_NPC_ENTRY(33), //Ryme
+    NEW_NPC_ENTRY(34), //Tate
+    NEW_NPC_ENTRY(35), //Liza
+    NEW_NPC_ENTRY(36), //Drayden
+    NEW_NPC_ENTRY(37), //Olympia
+    NEW_NPC_ENTRY(38), //Piers
+    NEW_NPC_ENTRY(39), //Marnie
+    NEW_NPC_ENTRY(40), //Tulip
+    NEW_NPC_ENTRY(41), //Juan
+    NEW_NPC_ENTRY(42), //Wallace
+    NEW_NPC_ENTRY(43), //Steven
+    NEW_NPC_ENTRY(44), //Marlon
+    NEW_NPC_ENTRY(45), //Wulfric
+    NEW_NPC_ENTRY(46), //Raihan
+    NEW_NPC_ENTRY(47), //Grusha
+    NEW_NPC_ENTRY(48), //Alder
+    NEW_NPC_ENTRY(49), //Diantha
+    NEW_NPC_ENTRY(50), //Leon
+    NEW_NPC_ENTRY(51), //Geeta
+    NEW_NPC_ENTRY(52), //Steve
+    NEW_NPC_ENTRY(53), //Dank
     { 0xFFFF, 0, 0},
 };
 
